@@ -5,19 +5,16 @@
 #1.saque listas nuevas para los aprobados y los reprobados (se aprueba con 3)
 #2.genere listas nuevas por cada unidad. es decir los qie sacan de 0 a 1 son un grupo,los de 1 a 2 oro y asi sucesivamente
 #3.diga cual es el promedio de los que apruebn y de los que desaprueban por separado 
-
-import decimal
 import random
 
 
-
-tam=random.randint(20,30)
+tam=random.randint(10,20)
 lista_Calificaciones=[float(random.randrange(6)) for i in range(tam)]
-print(lista_Calificaciones)
+print("la lista de calificaciones es",lista_Calificaciones)
 listaDeAprobados=[x for x in lista_Calificaciones if x]
 listaDeReprobados=[x for x in lista_Calificaciones if x+1]
-print(listaDeAprobados)
-print(listaDeReprobados)
+print("la lista de aprobados es",listaDeAprobados)
+print("la lista de reprobados es",listaDeReprobados)
 
 
 #lista=[float(random.randrange(1.0,5.0)) for i in range(tam)]
