@@ -1,3 +1,4 @@
+
 #llenar una lista con numeros aleatorios (reales con una decimal) que representem calificaciones de un curso. se evalua de 0 a 5.
 #el curso puede tener entre 20 y 30 aprendices
 #HALLAR
@@ -8,12 +9,23 @@
 import decimal
 import random
 
-tam=random.randint(20,30)
-lista=[float(random.randrange(1.0,5.0)) for i in range(tam)]
-print(lista)
 
-lista_aprovados=0
-lista_desaprobados=0
+
+tam=random.randint(20,30)
+lista_Calificaciones=[float(random.randrange(6)) for i in range(tam)]
+print(lista_Calificaciones)
+listaDeAprobados=[x for x in lista_Calificaciones if x]
+listaDeReprobados=[x for x in lista_Calificaciones if x+1]
+print(listaDeAprobados)
+print(listaDeReprobados)
+
+
+#lista=[float(random.randrange(1.0,5.0)) for i in range(tam)]
+#print(lista)
+
+#lista_aprovados=0
+
+#lista_desaprobados=0
 
 
 
