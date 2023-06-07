@@ -1,6 +1,7 @@
 from Persona import *
-obj1=Persona('Mariana',10232)
-print(type(obj1))
-print(obj1.getnombre())
-obj1.setnombre('Nicol')
-print(obj1.getnombre())
+ob1=Persona('Daniela',654321)
+print(type(ob1))
+print(ob1.getNombre())
+ob1.setNombre(100)
+print(ob1.getNombre())
+print(ob1.__dict__)

@@ -1,24 +1,44 @@
-class Persona:
-    def __init__(self,nombre,documento,curso):
-       #print("se instancio un objeto")
-       self.__nombre=nombre
-       self.__documento=documento
-       self.__cursos=[]
-       #self.__telefono
+#Escriba una clase de Empleado que tenga como propiedades
+#nombre, cargo, salario
+#escribas metodos constructores, setters y getters
+#escriba un metodo que permita calcular cuanto gana el empleado en una hora
+#un método para saber cuánto recibe de incremento si el salario sube con el IPC. Si gana el minimo se le aumenta el ipc + 3%
+#Un método que recibe una cantidad de horas extras y calcula el salario incrementando las extras. No puede hacer mas de dos horas diarias y trabaja de luenes a viernes. valido
+#Anexar variable de clase que cuente cantidad de objetos creados de esa clase
 
-    def setnombre(self,nombre):
+
+class Persona:
+    
+    def __init__(self,nombre,documento):
+        #print('Se instancio un objeto')
+        self.__nombre=nombre
+        self.__documento=documento
+        #self.__telefono
+        #self.__cursos=[]
+
+    def setNombre(self,nombre):
         self.__nombre=nombre
 
-    def getnombre(self):
+    def getNombre(self):
         return self.__nombre
-
-    def setdocumento(self,documento):
+    
+    def setDocumento(self,documento):
         self.__documento=documento
 
-    def getdocumento(self):
+    def getDocumento(self):
         return self.__documento
+
+
+
+
+
+
+
+
+
+
+
+
     
-    def setCurso(self,curso)
-        
     
     
