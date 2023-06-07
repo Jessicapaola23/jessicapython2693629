@@ -18,7 +18,3 @@ class Persona:
     def getdocumento(self):
         return self.__documento
     
-    def setCurso(self,curso)
-        
-    
-    
