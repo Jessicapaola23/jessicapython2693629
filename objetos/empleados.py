@@ -3,6 +3,7 @@ class empleados:
         self.__nombre=nombre
         self.__cargo=cargo
         self.__salario=salario
+        self.__horas=[]
 
     def setNombre(self,nombre):
         self.__nombre=nombre
